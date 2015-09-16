@@ -9,8 +9,8 @@
     </requires>
     <extension point="xbmc.service" library="service.py" start="login"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="be">Kodi Metadata Scanner updates library content in the background</summary>
-        <description lang="be">Kodi Metadata Scanner is the result of the Google Summer of Code 2012 project by developer topfs2. Using a rule-based inference engine named Heimdall, Kodi Metadata Scanner continuously keeps the metadata of library content up-to-date.</description>
+        <summary lang="en">Kodi Metadata Scanner updates library content in the background</summary>
+        <description lang="en">Kodi Metadata Scanner is the result of the Google Summer of Code 2012 project by developer topfs2. Using a rule-based inference engine named Heimdall, Kodi Metadata Scanner continuously keeps the metadata of library content up-to-date.</description>
         <platform>all</platform>
         <license>GPLv2</license>
         <forum>http://forum.kodi.tv/showthread.php?tid=134012</forum>
