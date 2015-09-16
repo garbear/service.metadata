@@ -25,7 +25,7 @@ __addon__        = xbmcaddon.Addon()
 __addonversion__ = __addon__.getAddonInfo('version')
 __addonname__    = __addon__.getAddonInfo('name')
 __addonpath__    = __addon__.getAddonInfo('path').decode('utf-8')
-__addonprofile__ = xbmc.translatePath( __addon__.getAddonInfo('profile') ).decode('utf-8')
+__addonprofile__ = xbmc.translatePath(__addon__.getAddonInfo('profile')).decode('utf-8')
 __icon__         = __addon__.getAddonInfo('icon')
 
 def log(msg):
@@ -34,8 +34,9 @@ def log(msg):
 class Main:
     def __init__(self):
         subfolders, files = xbmcvfs.listdir(CONTENT_ROOT)
-        for folder in subfolders:
-            pass
+        print 'Listing %s' % CONTENT_ROOT
+        print 'Subfolders: %s' % subfolders
+        print 'Files: %s' % files
 
 if (__name__ == '__main__'):
     log('Metadata service %s started' % __addonversion__)
